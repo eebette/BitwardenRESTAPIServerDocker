@@ -19,6 +19,9 @@ echo BW_CLIENTID=<your_client_id> >> $HOME/.env && \
 echo BW_CLIENTSECRET=<your_client_secret> >> $HOME/.env
 ```
 
+### Using your own Bitwarden server instance
+If you're using your own instance of Bitwarden, set the host name in the environment variable `BW_HOST`. The docker container will automatically configure the CLI/API to use this host when the container is started or restarted. 
+
 > 🔗 [Using an API key](https://bitwarden.com/help/cli/#using-an-api-key)
 ### Run
 You can run the container by using `docker run`:
