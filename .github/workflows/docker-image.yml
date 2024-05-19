@@ -52,5 +52,5 @@ jobs:
       
       - name: Inspect
         run: |
-          docker image inspect myimage:latest
+          docker image inspect ${{ vars.REGISTRY }}/${{ vars.IMAGE_NAME }}:latest
             
