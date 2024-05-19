@@ -48,9 +48,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-      
-      - name: Inspect
-        run: |
-          docker image inspect ${{ vars.REGISTRY }}/${{ vars.IMAGE_NAME }}:latest
-            
+          labels: ${{ steps.meta.outputs.labels }}            
