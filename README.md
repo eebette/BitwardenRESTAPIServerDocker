@@ -63,7 +63,7 @@ curl http://localhost:8087/unlock -d '{"password": "$BT_PASSWORD"}' --header "Co
 This command will export the session key **to the docker container's environment**:
 
 ```sh
-docker container exec -e BW_SESSION=$(curl http://localhost:8087/unlock -d '{"password": "QT%w17djQftA"}' --header "Content-Type: application/json" | grep -P '(?<="raw":").*(?=")' -o) bitwarden-rest-api-server env
+docker container exec -e BW_SESSION=$(curl http://localhost:8087/unlock -d '{"password": "$BT_PASSWORD"}' --header "Content-Type: application/json" | grep -P '(?<="raw":").*(?=")' -o) bitwarden-rest-api-server env
 ```
 
 ## Building the image
