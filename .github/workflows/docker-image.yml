@@ -35,7 +35,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@master
         with:
-          images: ebette1/bitwarden-rest-api-server
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
 
       - name: Build and push Docker image
         id: push
