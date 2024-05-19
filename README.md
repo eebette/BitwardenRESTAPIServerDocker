@@ -1,5 +1,5 @@
 # Bitwarden REST API Server
-https://hub.docker.com/repository/docker/ebette1/bitwarden-rest-api-server/general
+https://hub.docker.com/r/ebette1/bitwarden-rest-api-server
 
 ## Overview
 Use this Docker file to set up a local REST API server for interacting with Bitwarden resources.
