@@ -70,7 +70,7 @@ docker container exec -e BW_SESSION=$(curl http://localhost:8087/unlock -d '{"pa
 ```
 
 ## Building the image
-If you want to build the image locally, the easiest way is to clone the Github repo and build from there:
+If you want to build the image locally, the easiest way is to clone the GitHub repo and build from there:
 
 ```sh
 git clone https://github.com/eebette/BitwardenRESTAPIServerDocker
