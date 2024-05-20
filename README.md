@@ -37,20 +37,20 @@ Alternatively, you can set your container up in a `docker-compose.yml` file:
 services:
   # Service name
   bitwarden-rest-api-server:
-  # Image 
-  image: ebette1/bitwarden-rest-api-server:latest
-  # Container
-  container_name: bitwarden-rest-api-server
-  # Environment
-  environment:
-    # Sources from $HOME/.env file (assume docker-compose.yml is also in $HOME)
-    - BW_CLIENTID=$BW_CLIENTID
-    - BW_CLIENTSECRET=$BW_CLIENTSECRET
-  # Networking
-  ports:
-    - 8087:8087
-  # Config
-  restart: unless-stopped
+    # Image 
+    image: ebette1/bitwarden-rest-api-server:latest
+    # Container
+    container_name: bitwarden-rest-api-server
+    # Environment
+    environment:
+      # Sources from $HOME/.env file (assume docker-compose.yml is also in $HOME)
+      - BW_CLIENTID=$BW_CLIENTID
+      - BW_CLIENTSECRET=$BW_CLIENTSECRET
+    # Networking
+    ports:
+      - 8087:8087
+    # Config
+    restart: unless-stopped
 ```
 
 ### Example Usage
