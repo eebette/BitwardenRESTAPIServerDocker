@@ -12,5 +12,7 @@ fi
 # Allow login to fail if already logged in
 bw login --apikey || $TRUE
 
-echo 'Running `bw server` on port 8087'
+echo 'Running `bw serve` on port 8087'
 bw serve --hostname 0.0.0.0
+
+/login.sh &

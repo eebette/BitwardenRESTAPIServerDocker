@@ -9,8 +9,10 @@ RUN apt update && \
     rm -rfv *.zip
 
 COPY entrypoint.sh /
+COPY login.sh /
 
 # Grant execution permissions to the entrypoint script
 RUN chmod +x /entrypoint.sh
+RUN chmod +x /login.sh
 
 CMD ["/entrypoint.sh"]
