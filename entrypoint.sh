@@ -16,7 +16,7 @@ echo 'Running `bw serve` on port 8087'
 bw serve --hostname 0.0.0.0 &
 
 while true; do
-  if [[ $( curl -s http://localhost:8087/status | jq .data.template.status ) == 'unauthenticated' ]]; then
+  if [[ $( curl -s http://localhost:8087/status | jq .data.template.status ) == '"unauthenticated"' ]]; then
     echo "Restarting service..."
     kill -9 "$(pgrep -f 'bw serve')"
     sleep 1
