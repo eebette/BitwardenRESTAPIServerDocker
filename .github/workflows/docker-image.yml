@@ -44,5 +44,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}, latest
+          tags: ${{ steps.meta.outputs.tags }}, ***/bitwarden-rest-api-server:latest
           labels: ${{ steps.meta.outputs.labels }}            
